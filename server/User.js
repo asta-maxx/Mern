@@ -3,11 +3,13 @@ const mongoose = require('mongoose');
 const registerSchema = new mongoose.Schema({
     assessmentYear: {
         type: String,
-        required: true
+        required: true,
+        index: true
     },
     taxPayer: {
         type: String,
-        required: true
+        required: true,
+        index: true
     },
     category: {
         type: String,
